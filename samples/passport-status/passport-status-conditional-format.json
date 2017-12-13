@@ -1,0 +1,183 @@
+{
+    "$schema": "http://columnformatting.sharepointpnp.com/columnFormattingSchema.json",
+    "debugMode": true,
+    "elmType": "div",
+    "style": {
+        "font-weight": "bold",
+        "padding-left": "10px",
+        "background-color": {
+            "operator": "?",
+            "operands": [
+                {
+                    "operator": "==",
+                    "operands": [
+                        "@currentField",
+                        "Unknown"
+                    ]
+                },
+                "#D3D3D3",
+                {
+                    "operator": "?",
+                    "operands": [
+                        {
+                            "operator": "==",
+                            "operands": [
+                                "@currentField",
+                                "Current"
+                            ]
+                        },
+                        "#008000",
+                        {
+                            "operator": "?",
+                            "operands": [
+                                {
+                                    "operator": "==",
+                                    "operands": [
+                                        "@currentField",
+                                        "Expiring within 30 days"
+                                    ]
+                                },
+                                "#FFA500",
+                                {
+                                    "operator": "?",
+                                    "operands": [
+                                        {
+                                            "operator": "==",
+                                            "operands": [
+                                                "@currentField",
+                                                "Expiring within 90 days"
+                                            ]
+                                        },
+                                        "#FFFF00",
+                                        {
+                                            "operator": "?",
+                                            "operands": [
+                                                {
+                                                    "operator": "==",
+                                                    "operands": [
+                                                        "@currentField",
+                                                        "Expired"
+                                                    ]
+                                                },
+                                                "#FF0000",
+                                                ""
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "color": {
+            "operator": "?",
+            "operands": [
+                {
+                    "operator": "==",
+                    "operands": [
+                        "@currentField",
+                        "Current"
+                    ]
+                },
+                "#FFFFFF",
+                {
+                    "operator": "?",
+                    "operands": [
+                        {
+                            "operator": "==",
+                            "operands": [
+                                "@currentField",
+                                "Expired"
+                            ]
+                        },
+                        "#FFFFFF",
+                        "#000000"
+                    ]
+                }
+            ]
+        }
+    },
+    "children": [
+        {
+            "elmType": "span",
+            "style": {
+                "display": "inline-block",
+                "padding": "0 4px"
+            },
+            "attributes": {
+                "iconName": {
+                    "operator": "?",
+                    "operands": [
+                        {
+                            "operator": "==",
+                            "operands": [
+                                "@currentField",
+                                "Unknown"
+                            ]
+                        },
+                        "Help",
+                        {
+                            "operator": "?",
+                            "operands": [
+                                {
+                                    "operator": "==",
+                                    "operands": [
+                                        "@currentField",
+                                        "Current"
+                                    ]
+                                },
+                                "Glimmer",
+                                {
+                                    "operator": "?",
+                                    "operands": [
+                                        {
+                                            "operator": "==",
+                                            "operands": [
+                                                "@currentField",
+                                                "Expiring within 30 days"
+                                            ]
+                                        },
+                                        "IncidentTriangle",
+                                        {
+                                            "operator": "?",
+                                            "operands": [
+                                                {
+                                                    "operator": "==",
+                                                    "operands": [
+                                                        "@currentField",
+                                                        "Expiring within 90 days"
+                                                    ]
+                                                },
+                                                "AlertSolid",
+                                                {
+                                                    "operator": "?",
+                                                    "operands": [
+                                                        {
+                                                            "operator": "==",
+                                                            "operands": [
+                                                                "@currentField",
+                                                                "Expired"
+                                                            ]
+                                                        },
+                                                        "ErrorBadge",
+                                                        ""
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "elmType": "span",
+            "txtContent": "@currentField"
+        }
+    ]
+}
