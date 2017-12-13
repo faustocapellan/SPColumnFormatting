@@ -9,7 +9,7 @@ The following example shows a different color and icon based on the passport sta
 * **Unknown** (Color: Grey #D3D3D3 - Icon: Help)
 
 ## Screenshot
-![Passport Status Screenshot](./PassportStatus.jpg)
+![Passport Status Screenshot](./PassportStatus.JPG)
 
 ## Sample
 Solution|Author(s)
