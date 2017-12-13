@@ -8,6 +8,8 @@ The following example shows a different color and icon based on the passport sta
 * **Expired** (Color: Red #FF0000 - Icon: ErrorBadge)
 * **Unknown** (Color: Grey #D3D3D3 - Icon: Help)
 
+Note: the color of text changes based on the passport status. For example, the text is White for Current and Expired status, but then it's Black for the other statuses.
+
 ## Screenshot
 ![Passport Status Screenshot](./PassportStatus.JPG)
 
